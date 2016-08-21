@@ -9,37 +9,36 @@
 */
 
 /**
- * This simple sample has no external dependencies or session management, and shows the most basic
- * example of how to create a Lambda function for handling Alexa Skill requests.
- *
- * Examples:
- * One-shot model:
- *  User: "Alexa, ask Space Geek for a space fact"
- *  Alexa: "Here's your space fact: ..."
- */
+ * Sources:
+ * Climate Change Facts (https://www3.epa.gov/climatechange/basics/facts.html) - US Evironmental Protection Agency
+ * Fun facts about renewable energy (https://www.ovoenergy.com/blog/green/10-fun-facts-about-renewable-energy.html) - ovoenergy
+ * Fun Facts About Sustainability (http://www.pointpark.edu/About/AdminDepts/ProcurementandBusinessServices/Sustainability/FunFacts)- Point Park University
+ * Solar Energy (http://environment.nationalgeographic.com/environment/global-warming/solar-power-profile/)- National Geographic
+ * Key Facts about nuclear fusion (http://www.americansecurityproject.org/10-key-facts-about-nuclear-fusion/)- American Security Project
+ * Fighting climate change (http://www.rainforest-alliance.org/sites/default/files/campaign/campaign-files/our-forgotten-friends/index.php)- Rainforest Alliance
+*/ 
 
 /**
  * App ID for the skill
  */
 var APP_ID = undefined; //OPTIONAL: replace with "amzn1.echo-sdk-ams.app.[your-unique-value-here]";
 
-/**
- * Array containing space facts.
- */
+
 var FACTS = [
-    "A year on Mercury is just 88 days long.",
-    "Despite being farther from the Sun, Venus experiences higher temperatures than Mercury.",
-    "Venus rotates counter-clockwise, possibly because of a collision in the past with an asteroid.",
-    "On Mars, the Sun appears about half the size as it does on Earth.",
-    "Earth is the only planet not named after a god.",
-    "Jupiter has the shortest day of all the planets.",
-    "The Milky Way galaxy will collide with the Andromeda Galaxy in about 5 billion years.",
-    "The Sun contains 99.86% of the mass in the Solar System.",
-    "The Sun is an almost perfect sphere.",
-    "A total solar eclipse can happen once every 1 to 2 years. This makes them a rare event.",
-    "Saturn radiates two and a half times more energy into space than it receives from the sun.",
-    "The temperature inside the Sun can reach 15 million degrees Celsius.",
-    "The Moon is moving approximately 3.8 cm away from our planet every year."
+    "An automatic dishwasher uses less hot water than doing dishes by hand— an average of six gallons less, or more than two thousand gallons per year.",
+    "Water efficient fixtures can cut water use by 30 percent.",
+    "Although accounting for only 5% of the world's population, Americans consume twenty-six percent of the world's energy.",
+    "Some new refrigerators are so energy-smart they use less electricity than a standard light bulb.",
+    "If taken advantage of to its fullest extent, sunlight that beams on the earth for one hour could meet world energy demands for an entire year.",
+    "Renewable Energy creates three-times more jobs than fossil fuels.",
+    "Research in nuclear fusion will spark monumental scientific achievements. Fusion will give countries freedom from fossil fuels, it emits no pollutants or greenhouse gases, and there is no threat of nuclear meltdown like there is with the nuclear fission reactors of today!",
+    "Nuclear fusion has the potential to cleanly generate a nearly inexhaustible supply of energy. Fusion is the same reaction that powers the sun.",
+    "One tree can convert as much as forty-eight pounds of carbon dioxide into clean air per year",
+    "A mature tree can reduce peak summer temperatures by up to 9 degrees fareignheight",
+    "C O 2 emissions in the United States actually decreased from 2005 to 2014, thanks in part to new, energy-efficient technology and the use of cleaner fuels. Let's keep up the good work!",
+    "Plants, oceans, and soils release and absorb large quantities of carbon dioxide as a part of the Earth's natural carbon cycle. These natural emissions and absorptions of carbon dioxide on average balance out over time. However, the carbon dioxide from human activities is not part of this natural balance.",
+    "It is not too late to have a significant impact on future climate change and its effects on us. With appropriate actions by governments, communities, individuals, and businesses, we can reduce the amount of greenhouse gas pollution we release and lower the risk of much greater warming and severe consequences."
+    
 ];
 
 /**
@@ -85,7 +84,7 @@ Fact.prototype.intentHandlers = {
     },
 
     "AMAZON.HelpIntent": function (intent, session, response) {
-        response.ask("You can say tell me a space fact, or, you can say exit... What can I help you with?", "What can I help you with?");
+        response.ask("You can say tell me a sustainability fact, or, you can say exit... What can I help you with?", "What can I help you with?");
     },
 
     "AMAZON.StopIntent": function (intent, session, response) {
@@ -103,7 +102,7 @@ Fact.prototype.intentHandlers = {
  * Gets a random new fact from the list and returns to the user.
  */
 function handleNewFactRequest(response) {
-    // Get a random space fact from the space facts list
+    // Get a random fact from the facts list
     var factIndex = Math.floor(Math.random() * FACTS.length);
     var randomFact = FACTS[factIndex];
 
