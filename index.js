@@ -21,7 +21,7 @@
 /**
  * App ID for the skill
  */
-var APP_ID = undefined; //OPTIONAL: replace with "amzn1.echo-sdk-ams.app.[your-unique-value-here]";
+var APP_ID = "amzn1.ask.skill.ab50acce-b0ad-41ce-8523-4f09363844aa";
 
 
 var FACTS = [
@@ -33,11 +33,16 @@ var FACTS = [
     "Renewable Energy creates three-times more jobs than fossil fuels.",
     "Research in nuclear fusion will spark monumental scientific achievements. Fusion will give countries freedom from fossil fuels, it emits no pollutants or greenhouse gases, and there is no threat of nuclear meltdown like there is with the nuclear fission reactors of today!",
     "Nuclear fusion has the potential to cleanly generate a nearly inexhaustible supply of energy. Fusion is the same reaction that powers the sun.",
-    "One tree can convert as much as forty-eight pounds of carbon dioxide into clean air per year",
-    "A mature tree can reduce peak summer temperatures by up to 9 degrees fareignheight",
+    "One tree can convert as much as forty-eight pounds of carbon dioxide into clean air per year.",
+    "A mature tree can reduce peak summer temperatures by up to 9 degrees fahrenheit.",
     "C O 2 emissions in the United States actually decreased from 2005 to 2014, thanks in part to new, energy-efficient technology and the use of cleaner fuels. Let's keep up the good work!",
     "Plants, oceans, and soils release and absorb large quantities of carbon dioxide as a part of the Earth's natural carbon cycle. These natural emissions and absorptions of carbon dioxide on average balance out over time. However, the carbon dioxide from human activities is not part of this natural balance.",
-    "It is not too late to have a significant impact on future climate change and its effects on us. With appropriate actions by governments, communities, individuals, and businesses, we can reduce the amount of greenhouse gas pollution we release and lower the risk of much greater warming and severe consequences."
+    "It is not too late to have a significant impact on future climate change and its effects on us. With appropriate actions by governments, communities, individuals, and businesses, we can reduce the amount of greenhouse gas pollution we release and lower the risk of much greater warming and severe consequences.",
+    "Solar energy has gone global, and it’s huge in Bangladesh. As of May twenty-fifteen, more than 6 million solar home systems were in operation worldwide; 3 million of which were installed in Bangladesh alone. Bangladesh ranks first as the nation most vulnerable to the impacts of Climate Change in the coming decades due to its land below sea level.",
+    "The number of homes with solar systems installed in the United States has been increasing exponentially by year; this figure could reach three-million eight-hundred-thousand homes by the year two-thousand twenty.",
+    "Satellite observations show that Arctic sea ice is now declining at a rate of 13.3 percent per decade, relative to the 1981 to 2010 average.",
+    "Nighttime wind power is considered the most economical form of electrical power with which to synthesize fuel, because the load curve for electricity peaks sharply during the warmest hours of the day, but wind tends to blow slightly more at night than during the day, so, the price of nighttime wind power is often much less expensive than any alternative.",
+    "According to Washington DC-based nonprofit research organization, The Solar Foundation, the US solar industry had twenty percent more jobs in 2013 than it did in 2012. The report also stated that the industry grew fifty-three percent in the last four years, adding nearly fifty-thousand jobs. Currently, there are more than one-hundred forty-three thousand people employed by the solar industry today."
     
 ];
 
